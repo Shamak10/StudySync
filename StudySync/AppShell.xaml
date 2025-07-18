@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="StudySync.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:StudySync.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="{StaticResource CardBackgroundColor}"
+    Shell.TabBarTitleColor="{StaticResource Primary}"
+    Shell.TabBarUnselectedColor="{StaticResource SecondaryTextColor}">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Route="HomePage">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="OpenSansSemibold" Glyph="&#xf015;" Color="{AppThemeBinding Light={StaticResource SecondaryTextColor}, Dark={StaticResource White}}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent
+            Title="Checklist"
+            ContentTemplate="{DataTemplate views:ChecklistPage}"
+            Route="ChecklistPage">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="OpenSansSemibold" Glyph="&#xf0ae;" Color="{AppThemeBinding Light={StaticResource SecondaryTextColor}, Dark={StaticResource White}}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent
+            Title="Progress"
+            ContentTemplate="{DataTemplate views:ProgressPage}"
+            Route="ProgressPage">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="OpenSansSemibold" Glyph="&#xf1de;" Color="{AppThemeBinding Light={StaticResource SecondaryTextColor}, Dark={StaticResource White}}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+
+        <ShellContent
+            Title="Goals"
+            ContentTemplate="{DataTemplate views:GoalsPage}"
+            Route="GoalsPage">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="OpenSansSemibold" Glyph="&#xf091;" Color="{AppThemeBinding Light={StaticResource SecondaryTextColor}, Dark={StaticResource White}}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+    </TabBar>
+
+</Shell>

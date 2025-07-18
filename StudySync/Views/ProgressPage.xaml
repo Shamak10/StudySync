@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:StudySync.ViewModels"
+             xmlns:models="clr-namespace:StudySync.Models" 
+             xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:DataType="viewmodels:ProgressViewModel"
+             x:Class="StudySync.Views.ProgressPage"
+             Title="Progress">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Completed Tasks Section -->
+            <Label 
+                Text="Completed Tasks by Subject"
+                Style="{StaticResource HeaderLabel}"
+                Margin="0,0,0,10"/>
+
+            <Frame IsVisible="{Binding CompletedTasksChart, Converter={StaticResource NullToBoolConverter}}">
+                <Grid ColumnDefinitions="*, Auto" ColumnSpacing="20">
+                    <microcharts:ChartView Grid.Column="0" Chart="{Binding CompletedTasksChart}" HeightRequest="250" />
+
+                    <CollectionView Grid.Column="1" ItemsSource="{Binding CompletedLegend}" VerticalOptions="Center">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:LegendItem">
+                                <HorizontalStackLayout Spacing="10" Padding="0,5">
+                                    <BoxView Color="{Binding Color}" CornerRadius="6" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" />
+                                    <Label Text="{Binding Label}" VerticalOptions="Center" />
+                                    <Label Text="{Binding Value}" FontAttributes="Bold" VerticalOptions="Center" />
+                                </HorizontalStackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </Frame>
+
+            <Label 
+                Text="No completed tasks yet."
+                IsVisible="{Binding CompletedTasksChart, Converter={StaticResource NullToBoolConverter}, ConverterParameter=Invert}"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource SecondaryTextColor}"
+                Margin="0,20,0,20"/>
+
+            <BoxView HeightRequest="1" Color="{StaticResource BorderColor}" Margin="0,20" />
+
+            
+            <Label 
+                Text="Upcoming Tasks by Subject"
+                Style="{StaticResource HeaderLabel}"
+                Margin="0,0,0,10"/>
+
+            <Frame IsVisible="{Binding UpcomingTasksChart, Converter={StaticResource NullToBoolConverter}}">
+                <Grid ColumnDefinitions="*, Auto" ColumnSpacing="20">
+                    <microcharts:ChartView Grid.Column="0" Chart="{Binding UpcomingTasksChart}" HeightRequest="250"/>
+
+                    <CollectionView Grid.Column="1" ItemsSource="{Binding UpcomingLegend}" VerticalOptions="Center">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:LegendItem">
+                                <HorizontalStackLayout Spacing="10" Padding="0,5">
+                                    <BoxView Color="{Binding Color}" CornerRadius="6" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" />
+                                    <Label Text="{Binding Label}" VerticalOptions="Center" />
+                                    <Label Text="{Binding Value}" FontAttributes="Bold" VerticalOptions="Center" />
+                                </HorizontalStackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </Frame>
+
+            <Label 
+                Text="No upcoming tasks. Great job!"
+                IsVisible="{Binding UpcomingTasksChart, Converter={StaticResource NullToBoolConverter}, ConverterParameter=Invert}"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource SecondaryTextColor}"
+                Margin="0,20,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

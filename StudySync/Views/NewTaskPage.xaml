@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:StudySync.ViewModels"
+             x:DataType="viewmodels:NewTaskViewModel"
+             x:Class="StudySync.Views.NewTaskPage"
+             Title="{Binding IsEditing, Converter={StaticResource BoolToTextConverter}, ConverterParameter='Edit Task,Add New Task'}">
+
+	<VerticalStackLayout Spacing="15" Padding="20">
+
+		<Label Text="Task Title" />
+		<Frame>
+			<Entry Placeholder="e.g., Chapter 5 Reading" Text="{Binding Title}" />
+		</Frame>
+
+		<Label Text="Subject / Class" />
+		<Frame>
+			<Entry Placeholder="e.g., History 101" Text="{Binding Subject}" />
+		</Frame>
+
+		<Label Text="Due Date" />
+		<Frame>
+			<DatePicker Date="{Binding DueDate}" />
+		</Frame>
+
+		<Button Text="Save Task" Command="{Binding SaveTaskCommand}" Margin="0,20,0,0" />
+
+	</VerticalStackLayout>
+</ContentPage>
