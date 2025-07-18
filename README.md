@@ -28,36 +28,6 @@ StudySync is a comprehensive cross-platform study management application built w
 - **Windows** (10.0.17763.0+)
 - **Tizen** (6.5+)
 
-## 🏗️ Project Structure
-
-```
-StudySync/
-├── Models/
-│   ├── StudyTask.cs          # Task data model
-│   ├── StudyGoal.cs          # Goal data model
-│   └── LegendItem.cs         # Chart legend model
-├── ViewModels/
-│   ├── HomeViewModel.cs      # Home page logic
-│   ├── ChecklistViewModel.cs # Checklist page logic
-│   ├── GoalsViewModel.cs     # Goals page logic
-│   ├── ProgressViewModel.cs  # Progress page logic
-│   └── NewTaskViewModel.cs   # New task page logic
-├── Views/
-│   ├── HomePage.xaml         # Home page UI
-│   ├── ChecklistPage.xaml    # Checklist page UI
-│   ├── GoalsPage.xaml        # Goals page UI
-│   ├── ProgressPage.xaml     # Progress page UI
-│   └── NewTaskPage.xaml      # New task page UI
-├── Services/
-│   └── SQLiteService.cs      # Database service
-├── Converters/
-│   └── *.cs                  # Value converters for UI binding
-└── Resources/
-    ├── Styles/               # App themes and styles
-    ├── Fonts/                # Custom fonts
-    └── Images/               # App icons and images
-```
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -70,7 +40,7 @@ StudySync/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/StudySync.git
+   git clone https://github.com/Shamak10/StudySync.git
    cd StudySync
    ```
 
