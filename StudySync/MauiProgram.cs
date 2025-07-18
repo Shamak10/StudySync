@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui;
 using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
 using StudySync.Services;
@@ -18,6 +18,7 @@ public static class MauiProgram
             .UseMicrocharts()
             .ConfigureFonts(fonts =>
             {
+                // This section is critical for loading fonts
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
@@ -32,17 +33,12 @@ public static class MauiProgram
         // Register Pages and ViewModels
         builder.Services.AddTransient<HomePage>();
         builder.Services.AddTransient<HomeViewModel>();
-
         builder.Services.AddTransient<NewTaskPage>();
         builder.Services.AddTransient<NewTaskViewModel>();
-
-        // This is the critical section for the Checklist page
         builder.Services.AddTransient<ChecklistPage>();
         builder.Services.AddTransient<ChecklistViewModel>();
-
         builder.Services.AddTransient<ProgressPage>();
         builder.Services.AddTransient<ProgressViewModel>();
-
         builder.Services.AddTransient<GoalsPage>();
         builder.Services.AddTransient<GoalsViewModel>();
 
