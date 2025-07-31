@@ -33,13 +33,10 @@ This application is especially beneficial for students managing multiple courses
 > *(Screenshots of the app UI can be inserted here once available)*
 
 
-![Home Page]
 <img width="2138" height="1118" alt="image" src="https://github.com/user-attachments/assets/26e19907-4712-4ffe-8959-ea710e5944f4" />
 
-![Checklist Page]
 <img width="2136" height="1108" alt="image" src="https://github.com/user-attachments/assets/35f4361c-a2a5-4a47-b628-e55f8f98c168" />
 
-![Progress Page]
 <img width="2134" height="1118" alt="image" src="https://github.com/user-attachments/assets/debb6e28-a82a-4220-a068-508323045c1b" />
 
 * How to Use the App
