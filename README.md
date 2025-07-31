@@ -103,7 +103,7 @@ This application is especially beneficial for students managing multiple courses
 
 1. Clone the repository:
    
-    `git clone https://github.com/yourusername/StudySync.git`
+    `git clone https://github.com/shamak10/StudySync.git`
    
 3. Open the solution in Visual Studio 2022 or later with the .NET MAUI workload installed.
 
