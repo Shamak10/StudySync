@@ -30,7 +30,7 @@ This application is especially beneficial for students managing multiple courses
 
 ## Screenshots
 
-> *(Screenshots of the app UI can be inserted here once available)*
+> *(Screenshots are below for example what it's going to looklike)*
 
 
 <img width="2138" height="1118" alt="image" src="https://github.com/user-attachments/assets/26e19907-4712-4ffe-8959-ea710e5944f4" />
@@ -39,75 +39,70 @@ This application is especially beneficial for students managing multiple courses
 
 <img width="2134" height="1118" alt="image" src="https://github.com/user-attachments/assets/debb6e28-a82a-4220-a068-508323045c1b" />
 
-* How to Use the App
-Launch the app – View today's tasks, upcoming deadlines, and a motivational quote.
+## How to Use the App
 
-Add a Task – Use the + button to add a new task with course and due date.
+- **Launch the app** – View today's tasks, upcoming deadlines, and a motivational quote.
+- **Add a Task** – Use the `+` button to add a new task with course and due date.
+- **Manage Tasks** – Tap on a task to edit, mark as complete, or delete it.
+- **Track Progress** – Navigate to the **Progress** page to view completion stats via interactive charts.
+- **Set Goals**
+  - **Weekly Goal** – Define short-term goals for the week.
+  - **Major Milestone** – Use the calendar to create long-term academic goals.
 
-Manage Tasks – Tap on a task to edit, mark as complete, or delete it.
+---
 
-Track Progress – Navigate to the Progress page to see completion stats via charts.
+## Tech Stack & NuGet Packages
 
-Set Goals
+- **.NET MAUI** – Multi-platform App UI framework  
+- **C#**, **XAML**, **MVVM architecture**
+- **SQLite** – Local persistent data storage
+- **ObservableCollection** – Reactive task list handling
+- **Microcharts** – Chart and graph visualization
+- **CommunityToolkit.MVVM** – MVVM enhancements  
+- **CommunityToolkit.Maui** – UI helpers and extensions
 
-Weekly Goal – Set short-term targets for the week.
+---
 
-Major Milestone – Use the calendar to set long-term academic goals.
+## Team Members
 
-* Tech Stack & NuGet Packages
-.NET MAUI (Multi-platform App UI)
+| Name             | Role                              |
+|------------------|-----------------------------------|
+| **Shamak Patel** | UI Designer & Frontend Developer  |
+| **Silas Curry**  | Backend Integration & Developer   |
+| **Dharmin Patel**| Developer & Documentation         |
 
-C#, XAML, MVVM architecture
+---
 
-SQLite – Local data storage
+## 📁 Task Responsibilities
 
-ObservableCollection – Dynamic task lists
+### Shamak Patel
+- UI design using .NET MAUI
+- Built the Homepage and Goals page
+- Implemented navigation structure
+- Created task list with `CollectionView`
+- Integrated SQLite for data storage
 
-Microcharts – Visual progress representation
+### Silas Curry
+- Developed task scheduling logic
+- Built Checklist page and task model
+- Implemented MVVM structure and logic validation
+- Designed Progress tracking system
 
-CommunityToolkit.MVVM, CommunityToolkit.Maui
+### Dharmin Patel
+- Managed GitHub repo, pull requests, and documentation
+- Assisted with ViewModel logic and task modeling
+- Created Progress page and wired up navigation
+- Integrated Microcharts for visual feedback
 
-* Team Members
-Name	Role
-Shamak Patel:	UI Designer & Frontend Developer
-Silas Curry:	Backend Integration & Developer
-Dharmin Patel:	Developer & Documentation
+---
 
-* Task Responsibilities
-Shamak Patel
-UI design using .NET MAUI
+## 🧪 Installation & Run (Dev Setup)
 
-Homepage and Goals page
+1. Clone the repository:
+   
+  "git clone https://github.com/yourusername/StudySync.git"
+  
+2. Open the solution in Visual Studio 2022 or later with the .NET MAUI workload installed.
 
-Navigation structure
+3. Build and deploy the app on an Android/iOS emulator or physical device.
 
-Task list view using CollectionView
-
-SQLite integration
-
-Silas Curry
-Core task scheduling logic
-
-Checklist page and task model
-
-MVVM integration and validation
-
-Progress tracking system
-
-Dharmin Patel
-GitHub management & documentation
-
-Helped with ViewModel logic and task models
-
-Created Progress page and integrated navigation
-
-Chart implementation using Microcharts
- Installation & Run (Dev Setup)
-Clone the repository:
-
-1. "git clone https://github.com/SHAMAK10/StudySync.git" 
-
-2. Open the solution in Visual Studio 2022 or later with .NET MAUI workload installed.
-
-3. Build and deploy the app on an emulator or physical device.
-```md
