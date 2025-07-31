@@ -1,7 +1,6 @@
 # StudySync – A Study Planning Application
 
-**StudySync** is a cross-platform study planning mobile application built using **.NET MAUI**. It helps students stay organized, manage their assignments, track progress, and achieve academic goals efficiently. Designed with productivity and simplicity in mind, this app is tailored for high school and university students balancing multiple classes.
-
+**StudySync** is a cross-platform mobile application for study planning that was constructed with **.NET MAUI**.  It assists students in maintaining organization, effectively managing their assignments, monitoring their progress, and accomplishing their academic objectives.  This program was created with simplicity and productivity in mind, specifically for high school and college students who are juggling several classes.
 ---
 
 ## Features
@@ -73,13 +72,13 @@ This application is especially beneficial for students managing multiple courses
 
 ---
 
-## 📁 Task Responsibilities
+## Task Responsibilities
 
 ### Shamak Patel
 - UI design using .NET MAUI
 - Built the Homepage and Goals page
 - Implemented navigation structure
-- Created task list with `CollectionView`
+- Created task list with CollectionView
 - Integrated SQLite for data storage
 
 ### Silas Curry
@@ -96,13 +95,13 @@ This application is especially beneficial for students managing multiple courses
 
 ---
 
-## 🧪 Installation & Run (Dev Setup)
+## Installation & Run (Dev Setup)
 
 1. Clone the repository:
    
-  "git clone https://github.com/yourusername/StudySync.git"
-  
-2. Open the solution in Visual Studio 2022 or later with the .NET MAUI workload installed.
+    `git clone https://github.com/yourusername/StudySync.git`
+   
+3. Open the solution in Visual Studio 2022 or later with the .NET MAUI workload installed.
 
-3. Build and deploy the app on an Android/iOS emulator or physical device.
+4. Build and deploy the app on an Android/iOS emulator or physical device.
 
